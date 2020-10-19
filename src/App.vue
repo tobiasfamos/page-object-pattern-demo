@@ -1,10 +1,6 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <my-counter/>
   </div>
 </template>
 
@@ -30,3 +26,10 @@
   color: #42b983;
 }
 </style>
+<script>
+import MyCounter from "@/MyCounter";
+
+export default {
+  components: {MyCounter}
+}
+</script>
